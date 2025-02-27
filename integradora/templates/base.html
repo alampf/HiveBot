@@ -15,16 +15,39 @@
     <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>    <link href="{% static 'css/clean-blog.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/clean-blog.min.css' %}" rel="stylesheet">
+    
     <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Bootstrap JS (con Popper.js) -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-
-
-    <title>Hello, world!</title>
+    <title>{% block title %}HiveBot{% endblock %}</title>
+    <style>
+      /* Estilos personalizados para el modal */
+      .modal-content {
+        background-color: #444;
+        color: white;
+        border-radius: 15px;
+      }
+      
+      .modal-header {
+        border-bottom: none;
+      }
+      
+      .modal-footer {
+        border-top: none;
+      }
+      
+      .modal-title {
+        font-weight: bold;
+        color: white;
+      }
+      
+      h6 {
+        color: #f0ad4e;
+        margin-top: 15px;
+      }
+    </style>
   </head>
   <body>
     <!-- Contenedor principal que asegura que el footer se quede al final -->
@@ -38,7 +61,7 @@
             <div class="navbar-nav">
               <a class="nav-link active text-light" aria-current="page" href="{% url 'home' %}">Inicio</a>
               <a class="nav-link text-light" href="{% url 'acerca' %}">Acerca de</a>
-              <a class="nav-link text-light" href="#">Asesoramiento</a>
+              <a class="nav-link text-light" href="{% url 'asesoramiento' %}">Asesoramiento</a>
               <a class="nav-link text-light" href="#">Contacto</a>
             </div>
           </div>
@@ -58,8 +81,9 @@
           <div class="col-6 col-lg-4">
             <h5 class="fw-bold"> Asesoramiento </h5>
             <p class="pt-2">Instalación</p>
-            <p class="mb-2">Recomendaciones</p>
-          </div>
+            <!-- Enlace que activa el modal de recomendaciones -->
+            <p class="mb-2"><a href="#" data-bs-toggle="modal" data-bs-target="#asesoramientoModal" class="text-decoration-none text-blue">Recomendaciones</a></p>     
+      </div>
           <div class="col">
             <h5>Menú</h5>
             <ul class="list-unstyled pt-2">
@@ -83,5 +107,36 @@
       </div>
     </footer>
 
+    <!-- Modal de recomendaciones (movido al template base) -->
+    <div class="modal fade" id="asesoramientoModal" tabindex="-1" aria-labelledby="asesoramientoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">HiveBot - Recomendaciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <h6><strong>Ubicación del Dispensador</strong></h6>
+                    <p>Coloca el dispensador en un lugar seguro, protegido de la lluvia y el viento, pero accesible para las abejas.</p>
+                    <p>Busca una zona con buena exposición al sol en climas fríos o sombra parcial en climas calurosos.</p>
+                    
+                    <h6><strong>Tipo de Alimento y Cantidad</strong></h6>
+                    <p>Puedes usar cualquier alimento que sea líquido y viscoso para la función del dispensador.</p>
+                    
+                    <h6><strong>Mantenimiento del Dispensador</strong></h6>
+                    <p>Limpia el dispensador al menos una vez por semana para evitar moho o bacterias.</p>
+                    <p>Usa la aplicación para monitorear el nivel de alimento y recibir alertas de recarga.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (con Popper.js) - Movido al final del body para mejor rendimiento -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  
   </body>
 </html>

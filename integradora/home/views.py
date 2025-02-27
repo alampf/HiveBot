@@ -7,3 +7,6 @@ def home(request):
 
 def acerca(request):
     return render(request, 'home/acerca.html')
+
+def asesoramiento(request):
+    return render(request, 'home/asesoramiento.html')

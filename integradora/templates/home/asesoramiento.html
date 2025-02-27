@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block title %}Asesoramiento para Apicultores - HiveBot{% endblock %}
+
+{% block body %}
+<div class="container my-5">
+    <!-- Encabezado -->
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <h1 class="display-4 fw-bold text-red">Asesoramiento para Apicultores</h1>
+            <p class="lead text-accent">Información y recomendaciones para el manejo óptimo de su dispensador HiveBot</p>
+        </div>
+    </div>
+    
+    <!-- Ventajas -->
+    <div class="row mb-5">
+        <div class="col-md-8">
+            <h3 class="section-title">Instalación del Dispensador</h3>
+            <p class="lead-accent">La correcta instalación de su dispensador HiveBot es crucial para su funcionamiento óptimo y para la salud de sus colonias de abejas.</p>
+            
+            <div class="card p-3 bg-light my-3">
+                <h5>Pasos para la instalación:</h5>
+                <ol>
+                    <li>Seleccione la ubicación adecuada siguiendo nuestras <a href="#" data-bs-toggle="modal" data-bs-target="#asesoramientoModal" class="text-warning">recomendaciones</a>.</li>
+                    <li>Asegúrese de que la superficie sea estable y esté nivelada.</li>
+                    <li>Conecte el dispensador a la fuente de alimentación.</li>
+                    <li>Configure la aplicación siguiendo las instrucciones proporcionadas.</li>
+                    <li>Realice una prueba inicial para verificar su correcto funcionamiento.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card ventajas-card">
+                <div class="card-header ventajas-header">
+                    <h4 class="mb-0">Ventajas de HiveBot</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Alimentación constante y controlada</li>
+                    <li class="list-group-item">Monitoreo remoto del consumo</li>
+                    <li class="list-group-item">Alertas automáticas de nivel bajo</li>
+                    <li class="list-group-item">Previene acceso de depredadores</li>
+                    <li class="list-group-item">Materiales resistentes a la intemperie</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mantenimiento -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h3 class="section-title">Monitoreo y Mantenimiento</h3>
+            <p class="lead-accent">El mantenimiento regular es esencial para garantizar el funcionamiento óptimo de su dispensador HiveBot y maximizar su vida útil.</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card daily-card mb-3">
+                        <div class="card-header">
+                            <h5 class="mb-0">Mantenimiento Diario</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="mb-0 ps-3">
+                                <li>Verificar el nivel de alimento en la aplicación.</li>
+                                <li>Comprobar que no haya obstrucciones en las salidas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card weekly-card mb-3">
+                        <div class="card-header">
+                            <h5 class="mb-0">Mantenimiento Semanal</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="mb-0 ps-3">
+                                <li>Limpiar el dispensador según nuestras <a href="#" data-bs-toggle="modal" data-bs-target="#asesoramientoModal" class="text-warning">recomendaciones</a>.</li>
+                                <li>Verificar las conexiones eléctricas y batería.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card monthly-card mb-3">
+                        <div class="card-header">
+                            <h5 class="mb-0">Mantenimiento Mensual</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="mb-0 ps-3">
+                                <li>Realizar una limpieza profunda del sistema.</li>
+                                <li>Actualizar el firmware si hay actualizaciones.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
