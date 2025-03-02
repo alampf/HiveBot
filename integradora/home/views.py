@@ -10,3 +10,6 @@ def acerca(request):
 
 def asesoramiento(request):
     return render(request, 'home/asesoramiento.html')
+
+def contacto(request):
+    return render(request, 'home/contacto.html')

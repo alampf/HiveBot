@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+
+{% block title %}Acerca de - HiveBot{% endblock %}
+{% load static %}
+{% block body %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+    .contact-info-card {
+        background-color: #444;
+        color: white;
+        border-radius: 15px;
+        padding: 25px;
+        height: 100%;
+    }
+      
+    .contact-info-card h5 {
+        color: #f0ad4e;
+        margin-bottom: 20px;
+    }
+      
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        background-color: #f0ad4e;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        color: white;
+        font-size: 20px;
+    }
+      
+    .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+      
+    .social-media {
+        margin-top: 30px;
+    }
+      
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        background-color: #555;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        color: white;
+        font-size: 18px;
+        transition: all 0.3s ease;
+    }
+      
+    .social-icon:hover {
+        background-color: #f0ad4e;
+        transform: translateY(-3px);
+    }
+      
+    .map-container {
+        height: 300px;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-top: 40px;
+    }
+    
+    .faq-section {
+        margin-top: 50px;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Sección de Contacto -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="display-4 fw-bold">Contáctanos</h2>
+            <p class="lead text-muted">Estamos aquí para ayudarte con cualquier duda o sugerencia</p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <!-- Información de Contacto -->
+          <div class="col-md-8 mx-auto">
+            <div class="contact-info-card">
+              <h5 class="fw-bold">Información de Contacto</h5>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0">Dirección</h6>
+                  <p class="mb-0">Universidad Tecnologica Te Tlaxcala</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0">Teléfono</h6>
+                  <p class="mb-0">241 108 7863</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0">Email</h6>
+                  <p class="mb-0">info@hivebot.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa fa-clock-o"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0">Horario de Atención</h6>
+                  <p class="mb-0">Lunes a Viernes: 9:00 - 18:00<br>Sábados: 10:00 - 14:00</p>
+                </div>
+              </div>
+              
+              <div class="social-media">
+                <h6 class="mb-3">Síguenos en:</h6>
+                <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mapa -->
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.594178092322!2d-97.96659939999999!3d19.386717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cffced901ddce7%3A0x900a8087658724ce!2sUniversidad%20Tecnol%C3%B3gica%20de%20Tlaxcala!5e0!3m2!1ses-419!2smx!4v1740892806780!5m2!1ses-419!2smx" 
+      width="100%" 
+      height="100%" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+</div>  
+        <!-- Preguntas Frecuentes -->
+        <div class="row mt-5 faq-section">
+          <div class="col-12 text-center mb-4">
+            <h3 class="fw-bold">Preguntas Frecuentes</h3>
+          </div>
+          
+          <div class="col-md-8 mx-auto">
+            <div class="accordion" id="accordionFaq1">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ¿Cuál es el tiempo de respuesta a mis consultas?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFaq1">
+                  <div class="accordion-body">
+                    Nuestro equipo de soporte se compromete a responder todas las consultas en un plazo máximo de 24 horas hábiles.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Ofrecen soporte técnico para la instalación?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaq1">
+                  <div class="accordion-body">
+                    Sí, ofrecemos soporte técnico para la instalación de nuestros dispositivos. Puedes contactarnos por teléfono o email y un especialista te guiará paso a paso.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+{% endblock %}

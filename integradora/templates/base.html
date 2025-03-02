@@ -62,7 +62,7 @@
               <a class="nav-link active text-light" aria-current="page" href="{% url 'home' %}">Inicio</a>
               <a class="nav-link text-light" href="{% url 'acerca' %}">Acerca de</a>
               <a class="nav-link text-light" href="{% url 'asesoramiento' %}">Asesoramiento</a>
-              <a class="nav-link text-light" href="#">Contacto</a>
+              <a class="nav-link text-light" href="{% url 'contacto' %}">Contacto</a>
             </div>
           </div>
         </div>
@@ -80,23 +80,23 @@
         <div class="row">
           <div class="col-6 col-lg-4">
             <h5 class="fw-bold"> Asesoramiento </h5>
-            <p class="pt-2">Instalación</p>
-            <!-- Enlace que activa el modal de recomendaciones -->
-            <p class="mb-2"><a href="#" data-bs-toggle="modal" data-bs-target="#asesoramientoModal" class="text-decoration-none text-blue">Recomendaciones</a></p>     
+            <!-- Enlace que activa el modal -->
+            <p class="pt-2"><a href="#" data-bs-toggle="modal" data-bs-target="#instalacionModal" class="text-decoration-none text-blue">Instalacion</a></p>
+            <p class="mb-2"><a href="#" data-bs-toggle="modal" data-bs-target="#asesoramientoModal" class="text-decoration-none text-blue">Recomendaciones</a></p> 
+              
       </div>
           <div class="col">
             <h5>Menú</h5>
             <ul class="list-unstyled pt-2">
-              <li class="py-1">Sobre nosotros</li>
-              <li class="py-1">Contactanos</li>
-              <li class="py-1">Privacidad</li>
-              <li class="py-1">Seguridad</li>
+              <li class="py-1"><a href="#" data-bs-toggle="modal" data-bs-target="#sobreNosotrosModal" class="text-decoration-none text-blue">SobreNosotros</a></li>
+              <li class="py-1"><a href="#" data-bs-toggle="modal" data-bs-target="#contactanosModal" class="text-decoration-none text-blue">Contactanos</a></li>
+              <li class="py-1"><a href="#" data-bs-toggle="modal" data-bs-target="#privacidadModal" class="text-decoration-none text-blue">Privacidad y Seguridad</a></li>
             </ul>
           </div>
           <div class="col">
             <h5>Servicios</h5>
             <ul class="list-unstyled pt-2">
-              <li class="py-1"> Ayuda </li>
+              <li class="py-1"><a href="#" data-bs-toggle="modal" data-bs-target="#ayudaModal" class="text-decoration-none text-blue">Ayuda</a></li>
             </ul>
           </div>
         </div>
@@ -107,7 +107,7 @@
       </div>
     </footer>
 
-    <!-- Modal de recomendaciones (movido al template base) -->
+    <!-- Modal de recomendaciones -->
     <div class="modal fade" id="asesoramientoModal" tabindex="-1" aria-labelledby="asesoramientoModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -133,6 +133,152 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal de Instalación -->
+<div class="modal fade" id="instalacionModal" tabindex="-1" aria-labelledby="instalacionModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="instalacionModalLabel">HiveBot - Instalación del Dispensador</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+              <h6><strong>Paso 1: Seleccionar la Ubicación</strong></h6>
+              <p>Coloca el dispensador en un área protegida de la lluvia y el viento, pero accesible para las abejas.</p>
+              <p>En climas fríos, busca una zona con buena exposición al sol; en climas calurosos, coloca el dispensador en semisombra.</p>
+
+              <h6><strong>Paso 2: Montaje del Dispensador</strong></h6>
+              <p>Fija el dispensador en una base estable, asegurándote de que esté nivelado para evitar derrames.</p>
+              <p>Si el dispensador es colgante, ajusta la altura para que las abejas puedan acceder fácilmente.</p>
+
+              <h6><strong>Paso 3: Carga del Alimento</strong></h6>
+              <p>Utiliza una mezcla de agua con azúcar o cualquier otro alimento líquido recomendado.</p>
+              <p>Evita colocar productos que puedan fermentar rápidamente o atraer plagas.</p>
+
+              <h6><strong>Paso 4: Activación con la Aplicación</strong></h6>
+              <p>Descarga la app de HiveBot y vincula el dispensador con tu cuenta.</p>
+              <p>Usa la aplicación para configurar alertas de recarga y recibir notificaciones sobre el estado del alimento.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Modal de Sobre Nosotros -->
+<div class="modal fade" id="sobreNosotrosModal" tabindex="-1" aria-labelledby="sobreNosotrosModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sobreNosotrosModalLabel">HiveBot - Sobre Nosotros</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <h6><strong>Nuestra Misión</strong></h6>
+        <p>En HiveBot, nos dedicamos a crear soluciones innovadoras que apoyen la conservación de las abejas y otros polinizadores esenciales para nuestro ecosistema.</p>
+        
+        <h6><strong>Nuestra Historia</strong></h6>
+        <p>HiveBot nació en 2025 como resultado de ingenieros apasionados por la tecnología sostenible. Identificamos una necesidad crítica en el sector apícola: la optimización de la alimentación de las colmenas, especialmente en épocas de escasez.</p>
+        
+        <h6><strong>Nuestro Equipo</strong></h6>
+        <p>Somos un equipo de ingenieros y diseñadores comprometidos con el desarrollo de tecnologías que mejoren la producion y sea sustentable a largo plazo.</p>
+        
+        <h6><strong>Compromiso con la Sostenibilidad</strong></h6>
+        <p>Todos nuestros productos están diseñados para minimizar el impacto ambiental, manteniendo siempre en primer plano el bienestar de las abejas.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de Contáctanos -->
+<div class="modal fade" id="contactanosModal" tabindex="-1" aria-labelledby="contactanosModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactanosModalLabel">HiveBot - Contáctanos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <h6><strong>Información de Contacto</strong></h6>
+        <p><i class="fa fa-envelope"></i> Email: mo27marco@gmail.com</p>
+        <p><i class="fa fa-phone"></i> Teléfono: 241 108 7863</p>
+        <p><i class="fa fa-map-marker"></i> Dirección: utt </p>
+        <h6 class="mt-4"><strong>Horario de Atención</strong></h6>
+        <p>Lunes a Viernes: 9:00 - 18:00</p>
+        <p>Sábados: 10:00 - 14:00</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de Privacidad y Seguridad -->
+<div class="modal fade" id="privacidadModal" tabindex="-1" aria-labelledby="privacidadModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="privacidadModalLabel">HiveBot - Privacidad y Seguridad</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <h6><strong>Política de Privacidad</strong></h6>
+        <p>En HiveBot respetamos tu privacidad y nos comprometemos a proteger tus datos personales. Esta política describe cómo recopilamos, utilizamos y protegemos la información que nos proporcionas.</p>
+        
+        <h6><strong>Datos que Recopilamos</strong></h6>
+        <p>Recopilamos información básica como nombre, dirección de correo electrónico y ubicación del dispensador para mejorar tu experiencia con nuestros productos.</p>
+        
+        <h6><strong>Uso de la Información</strong></h6>
+        <p>Utilizamos tus datos para mejorar nuestros servicios, proporcionar soporte técnico y enviarte actualizaciones relevantes sobre tu dispensador HiveBot.</p>
+        
+        <h6><strong>Seguridad de Datos</strong></h6>
+        <p>Implementamos medidas técnicas y organizativas para proteger tus datos contra accesos no autorizados, pérdida o divulgación.</p>
+        
+        <h6><strong>Tus Derechos</strong></h6>
+        <p>Tienes derecho a acceder, rectificar o eliminar tus datos personales en cualquier momento. Para ejercer estos derechos, contáctanos a través de privacy@hivebot.com.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de Ayuda -->
+<div class="modal fade" id="ayudaModal" tabindex="-1" aria-labelledby="ayudaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ayudaModalLabel">HiveBot - Centro de Ayuda</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <h6><strong>Preguntas Frecuentes</strong></h6>
+        <p><strong>¿Cómo configuro mi dispensador por primera vez?</strong><br>
+        Descarga nuestra aplicación, sigue las instrucciones de configuración y conecta el dispensador a tu red WiFi.</p>
+        
+        <p><strong>¿Qué tipo de alimento puedo usar?</strong><br>
+        Recomendamos una solución de agua con azúcar en proporción 1:1, aunque el dispensador es compatible con diversos tipos de alimentos líquidos para abejas.</p>
+        
+        <p><strong>¿Con qué frecuencia debo rellenar el dispensador?</strong><br>
+        Depende del clima y la población de abejas, pero nuestra aplicación te enviará notificaciones cuando sea necesario rellenar.</p>
+        
+        <h6><strong>Soporte Técnico</strong></h6>
+        <p>Si experimentas problemas con tu dispositivo HiveBot, puedes:</p>
+        <p>- Consultar nuestros tutoriales en video</p>
+        <p>- Contactar a nuestro equipo de soporte en soporte@hivebot.com</p>
+        <p>- Llamar a nuestra línea de ayuda: 241 108 7863</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Bootstrap JS (con Popper.js) - Movido al final del body para mejor rendimiento -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

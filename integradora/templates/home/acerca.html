@@ -1,7 +1,145 @@
 {% extends 'base.html' %}
 
-{% block title %}Acerca de{% endblock %}
-
-{% block modal %}
-{% include 'asesoramiento_modal.html' %}
+{% block title %}Acerca de - HiveBot{% endblock %}
+{% load static %}
+{% block body %}
+<div class="container my-5">
+    <!-- Encabezado -->
+    <div class="header-section row mb-4">
+        <div class="col-12 text-center">
+            <h1 class="display-5 fw-bold">Acerca de HiveBot</h1>
+            <p class="lead">Innovando en el cuidado de las abejas y mejorando la productividad en la apicultura</p>
+        </div>
+    </div>
+    
+    <!-- Historia y Misión -->
+    <div class="about-section">
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <h3 class="about-title">Nuestra Historia</h3>
+                <div class="about-content">
+                    <p>HiveBot nació en 2025 como resultado ingenieros apasionados por la tecnología sostenible. Identificamos una necesidad crítica en el sector apícola: la optimización de la alimentación de las colmenas, especialmente en épocas de escasez.</p>
+                    <p>Tras una investigación y desarrollo, creamos el primer dispensador inteligente específicamente diseñado para las necesidades de las abejas y los apicultores profesionales.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about-image">
+                    <img src="{% static 'img/ab.jpeg' %}" class="d-block w-100" alt="ab">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mb-5">
+            <div class="col-md-6 order-md-2">
+                <h3 class="about-title">Nuestra Misión</h3>
+                <div class="about-content">
+                    <p>En HiveBot, nos dedicamos a desarrollar soluciones tecnológicas que mejoren la salud de las colonias de abejas y faciliten la labor de los apicultores, contribuyendo así a la preservación de estos polinizadores esenciales para nuestro ecosistema.</p>
+                    <p>Creemos en la combinación perfecta entre la sabiduría tradicional de la apicultura y la innovación tecnológica, para crear herramientas que realmente marquen la diferencia en la salud y productividad de las colmenas.</p>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="about-image">
+                    <img src="{% static 'img/abejas1.jpeg' %}" class="d-block w-100" alt="Abejas1">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Valores -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h3 class="section-title mb-4">Nuestros Valores</h3>
+        </div>
+        <div class="col-md-4">
+            <div class="about-feature">
+                <div class="about-feature-icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <div class="about-feature-text">
+                    <h4 class="about-feature-title">Sostenibilidad</h4>
+                    <p>Desarrollamos productos con materiales duraderos asi no se tenga que comprar un producto similiar cada año con eso minimizamos nuestro impacto ecológico.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="about-feature">
+                <div class="about-feature-icon">
+                    <i class="bi bi-lightbulb"></i>
+                </div>
+                <div class="about-feature-text">
+                    <h4 class="about-feature-title">Innovación</h4>
+                    <p>investigamos para ofrecer soluciones tecnológicas adaptadas a las necesidades reales de la apicultura moderna.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="about-feature">
+                <div class="about-feature-icon">
+                    <i class="bi bi-heart"></i>
+                </div>
+                <div class="about-feature-text">
+                    <h4 class="about-feature-title">Compromiso</h4>
+                    <p>Nos comprometemos con el bienestar de las abejas y el éxito de los apicultores, ofreciendo un soporte continuo y personalizado.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Equipo -->
+    <div class="about-section mb-5">
+        <h3 class="about-title text-center mb-4">Nuestro Equipo</h3>
+        <div class="row">
+            <div class="col-md-3 text-center mb-4">
+                <div class="card">
+                    <img src="/static/img/team-member1.jpg" class="card-img-top" alt="Miembro del equipo">
+                    <div class="card-body">
+                        <h5 class="card-title">Antony de la cruz</h5>
+                        <p class="card-text">Development team leader, analyst and tester</p>
+                        <p class="card-text"><small>Experencia en liderazgo de equipos</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center mb-4">
+                <div class="card">
+                    <img src="/static/img/team-member2.jpg" class="card-img-top" alt="Miembro del equipo">
+                    <div class="card-body">
+                        <h5 class="card-title">Marco Antonio Damian Ortiz</h5>
+                        <p class="card-text">Process leader, development member, analyst and tester</p>
+                        <p class="card-text"><small>Ingeniero especializado en procesos</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center mb-4">
+                <div class="card">
+                    <img src="/static/img/team-member3.jpg" class="card-img-top" alt="Miembro del equipo">
+                    <div class="card-body">
+                        <h5 class="card-title">Alan Lopez Romero</h5>
+                        <p class="card-text">frontend development, analyst and tester</p>
+                        <p class="card-text"><small>Especialista en creacion de Interfaz </small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center mb-4">
+                <div class="card">
+                    <img src="/static/img/team-member4.jpg" class="card-img-top" alt="Miembro del equipo">
+                    <div class="card-body">
+                        <h5 class="card-title">Alan Platani</h5>
+                        <p class="card-text">Software development, analyst and tester</p>
+                        <p class="card-text"><small>Creador de Software</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- CTA -->
+    <div class="row">
+        <div class="col-12 text-center">
+            <div class="soporte-section p-5">
+                <h3 class="mb-4 text-accent">¿Listo para revolucionar tu apicultura?</h3>
+                <p class="lead-accent mb-4">Descubre cómo HiveBot puede ayudarte a mejorar y optimizar tu producción.</p>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
