@@ -7,39 +7,190 @@
     <!-- Encabezado -->
     <div class="header-section row mb-4">
         <div class="col-12 text-center">
-            <h1 class="display-5 fw-bold">Acerca de HiveBot</h1>
-            <p class="lead">Innovando en el cuidado de las abejas y mejorando la productividad en la apicultura</p>
+            <h1 class="titulo">
+                acerca de Hiv<span class="letra-color">e</span>Bot
+            </h1>
+            <p class="p">Innovando en el cuidado de las abejas y mejorando la productividad en la apicultura</p>
         </div>
     </div>
+
+    <style>
+        .titulo{
+      text-align: center;
+      font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.letra-color {
+    color: #FFD700; /* Color dorado */
+}
+
+.p{
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.nh{
+    text-align: left;
+    letter-spacing: 0.5px;
+    font-family: "Arial", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.p1{
+    text-align: left;
+    letter-spacing: 0.5px;
+    font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+
+}
+
+.nv{
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    font-family: "Arial", sans-serif;
+
+}
+
+.nv1{
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    font-family: "Arial", sans-serif;
+
+}
+
+.img1 {
+    display: block;
+    width: 95%; 
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; 
+}
+
+.p2{
+    font-size: 16px;
+    color: white;
+    font-family: "Arial", sans-serif;
+}
+
+.p3{
+    font-size: 15px; 
+  font-weight: bold; 
+  color: #ffffff; 
+  
+  letter-spacing: 1px; 
+}
+
+.NE{
+    color: white;
+    font-size: 35px;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+
+}
+
+.LA{
+    text-align: center;
+      font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.about-section h3.NE {
+  font-size: 2.5em;
+  color: #ffffff; 
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/*  imágenes */
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* tarjeta */
+.card-body {
+  background-color: #242424; 
+  padding: 20px;
+}
+
+/* Títulos */
+.card-title {
+  font-size: 1.25em;
+  color: #FFD700;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* text de tarjeta */
+.card-text {
+  font-size: 1em;
+  color: #666; 
+}
+/* segundo texto*/
+.card-text small {
+  font-style: italic;
+  color: #999; 
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  .col-md-3 {
+    margin-bottom: 30px;
+  }
+}
+    </style>
     
     <!-- Historia y Misión -->
     <div class="about-section">
         <div class="row mb-5">
             <div class="col-md-6">
-                <h3 class="about-title">Nuestra Historia</h3>
-                <div class="about-content">
+                <h3 class="nh">Nuestra Historia</h3>
+                <div class="p1">
                     <p>HiveBot nació en 2025 como resultado ingenieros apasionados por la tecnología sostenible. Identificamos una necesidad crítica en el sector apícola: la optimización de la alimentación de las colmenas, especialmente en épocas de escasez.</p>
                     <p>Tras una investigación y desarrollo, creamos el primer dispensador inteligente específicamente diseñado para las necesidades de las abejas y los apicultores profesionales.</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="about-image">
-                    <img src="{% static 'img/ab.jpeg' %}" class="d-block w-100" alt="ab">
+                    <img src="{% static 'img/ab.jpeg' %}" class="img1" alt="ab">
                 </div>
             </div>
         </div>
         
         <div class="row mb-5">
             <div class="col-md-6 order-md-2">
-                <h3 class="about-title">Nuestra Misión</h3>
-                <div class="about-content">
+                <h3 class="nh">Nuestra Misión</h3>
+                <div class="p1">
                     <p>En HiveBot, nos dedicamos a desarrollar soluciones tecnológicas que mejoren la salud de las colonias de abejas y faciliten la labor de los apicultores, contribuyendo así a la preservación de estos polinizadores esenciales para nuestro ecosistema.</p>
                     <p>Creemos en la combinación perfecta entre la sabiduría tradicional de la apicultura y la innovación tecnológica, para crear herramientas que realmente marquen la diferencia en la salud y productividad de las colmenas.</p>
                 </div>
             </div>
             <div class="col-md-6 order-md-1">
                 <div class="about-image">
-                    <img src="{% static 'img/abejas1.jpeg' %}" class="d-block w-100" alt="Abejas1">
+                    <img src="{% static 'img/abejas1.jpeg' %}" class="img1" alt="Abejas1">
                 </div>
             </div>
         </div>
@@ -48,16 +199,16 @@
     <!-- Valores -->
     <div class="row mb-5">
         <div class="col-12">
-            <h3 class="section-title mb-4">Nuestros Valores</h3>
+            <h3 class="nv1">Nuestros Valores</h3>
         </div>
         <div class="col-md-4">
             <div class="about-feature">
                 <div class="about-feature-icon">
                     <i class="bi bi-shield-check"></i>
                 </div>
-                <div class="about-feature-text">
-                    <h4 class="about-feature-title">Sostenibilidad</h4>
-                    <p>Desarrollamos productos con materiales duraderos asi no se tenga que comprar un producto similiar cada año con eso minimizamos nuestro impacto ecológico.</p>
+                <div>
+                    <h4 class="nv">Sostenibilidad</h4>
+                    <p class="p2">Desarrollamos productos con materiales duraderos asi no se tenga que comprar un producto similiar cada año con eso minimizamos nuestro impacto ecológico.</p>
                 </div>
             </div>
         </div>
@@ -66,9 +217,9 @@
                 <div class="about-feature-icon">
                     <i class="bi bi-lightbulb"></i>
                 </div>
-                <div class="about-feature-text">
-                    <h4 class="about-feature-title">Innovación</h4>
-                    <p>investigamos para ofrecer soluciones tecnológicas adaptadas a las necesidades reales de la apicultura moderna.</p>
+                <div>
+                    <h4 class="nv">Innovación</h4>
+                    <p class="p2">investigamos para ofrecer soluciones tecnológicas adaptadas a las necesidades reales de la apicultura moderna.</p>
                 </div>
             </div>
         </div>
@@ -77,9 +228,9 @@
                 <div class="about-feature-icon">
                     <i class="bi bi-heart"></i>
                 </div>
-                <div class="about-feature-text">
-                    <h4 class="about-feature-title">Compromiso</h4>
-                    <p>Nos comprometemos con el bienestar de las abejas y el éxito de los apicultores, ofreciendo un soporte continuo y personalizado.</p>
+                <div >
+                    <h4 class="nv">Compromiso</h4>
+                    <p class="p2">Nos comprometemos con el bienestar de las abejas y el éxito de los apicultores, ofreciendo un soporte continuo y personalizado.</p>
                 </div>
             </div>
         </div>
@@ -87,10 +238,10 @@
     
     <!-- Equipo -->
     <div class="about-section mb-5">
-        <h3 class="about-title text-center mb-4">Nuestro Equipo</h3>
+        <h3 class="NE">Nuestro Equipo</h3>
         <div class="row">
             <div class="col-md-3 text-center mb-4">
-                <div class="card">
+                <div class="card h-100 d-flex flex-column">
                     <img src="/static/img/team-member1.jpg" class="card-img-top" alt="Miembro del equipo">
                     <div class="card-body">
                         <h5 class="card-title">Antony de la cruz</h5>
@@ -100,7 +251,7 @@
                 </div>
             </div>
             <div class="col-md-3 text-center mb-4">
-                <div class="card">
+                <div class="card h-100 d-flex flex-column">
                     <img src="/static/img/team-member2.jpg" class="card-img-top" alt="Miembro del equipo">
                     <div class="card-body">
                         <h5 class="card-title">Marco Antonio Damian Ortiz</h5>
@@ -110,7 +261,7 @@
                 </div>
             </div>
             <div class="col-md-3 text-center mb-4">
-                <div class="card">
+                <div class="card h-100 d-flex flex-column">
                     <img src="/static/img/team-member3.jpg" class="card-img-top" alt="Miembro del equipo">
                     <div class="card-body">
                         <h5 class="card-title">Alan Lopez Romero</h5>
@@ -120,7 +271,7 @@
                 </div>
             </div>
             <div class="col-md-3 text-center mb-4">
-                <div class="card">
+                <div class="card h-100 d-flex flex-column">
                     <img src="/static/img/team-member4.jpg" class="card-img-top" alt="Miembro del equipo">
                     <div class="card-body">
                         <h5 class="card-title">Alan Platani</h5>
@@ -136,8 +287,8 @@
     <div class="row">
         <div class="col-12 text-center">
             <div class="soporte-section p-5">
-                <h3 class="mb-4 text-accent">¿Listo para revolucionar tu apicultura?</h3>
-                <p class="lead-accent mb-4">Descubre cómo HiveBot puede ayudarte a mejorar y optimizar tu producción.</p>
+                <h3 class="LA">¿Listo para revolucionar tu apicultura?</h3>
+                <p class="p3">Descubre cómo HiveBot puede ayudarte a mejorar y optimizar tu producción.</p>
             </div>
         </div>
     </div>
