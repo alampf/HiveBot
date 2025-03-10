@@ -1,1 +1,1 @@
-# integradoraDos (anteriormente conocido como HivebotB5)
+# integradoraDos (HivebotB5)
