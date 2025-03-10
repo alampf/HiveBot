@@ -1,0 +1,4 @@
+# Archivos sensibles y compilados
+*.pyc
+__pycache__/
+.env
