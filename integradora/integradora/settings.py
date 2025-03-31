@@ -96,14 +96,14 @@ if engine == 'sqlite3':
 else:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'HOST': str(os.getenv('DB_HOST')),
-            'NAME': str(os.getenv('DB_NAME')),
-            'PASSWORD': str(os.getenv('DB_PASSWORD')),
-            'USER': str(os.getenv('DB_USER')),
-            'PORT': str(os.getenv('DB_PORT')),
-        }
-    }
+          'ENGINE': 'django.db.backends.postgresql',
+          'HOST': str(os.getenv('DB_HOST')),
+          'NAME': str(os.getenv('DB_NAME')),
+          'PASSWORD': str(os.getenv('DB_PASSWORD')),
+          'USER': str(os.getenv('DB_USER')),
+          'PORT': str(os.getenv('DB_PORT')),
+      }
+  }
 
 
 # Password validation
